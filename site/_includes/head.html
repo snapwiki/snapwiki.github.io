@@ -1,0 +1,31 @@
+<!-- Title and Meta -->
+
+<title>{% if page.title != "Index" %}{{ page.title }} - {% endif %}Snap! Wiki</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="description" content="{{ page.description }}" />
+<meta name="author" content="" />
+<link rel="icon" href="https://cdn2.scratch.mit.edu/get_image/user/14542217_32x32.png" />
+
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://snapwiki.github.io{{ page.url }}" />
+<meta
+  property="og:title"
+  content='{% if page.title != "Index" %}{{ page.title }} - {% else %}Snap! Wiki{% endif %}'
+/>
+<meta property="og:description" content="{{ page.description }}" />
+<meta property="og:site_name" content="Snap! Wiki" />
+<meta property="og:locale" content="en_US" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:url" content="https://grahamsh-llk.github.io{{ page.url }}" />
+<meta name="twitter:title" content='{% if page.title != "Index" %}{{ page.title }} - {% endif %}Snap! Wiki' />
+<meta name="twitter:description" content="{{ page.description }}" />
+
+<!-- Require Script and Loading Page -->
+
+<link rel="stylesheet" href="/assets/css/base.css" />
+<meta name="google-site-verification" content="GAhpls4iHd0QmH8tJvBobuNWNE9QmgPbDs8fNmXJ8aI" />
+{% unless page.no-analytics %}
+
+{% endunless %}
