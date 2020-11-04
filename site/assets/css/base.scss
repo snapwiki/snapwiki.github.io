@@ -40,8 +40,8 @@ header {
       }
     }
   }
-#visit {
-  color: var(--white)
+  #visit {
+    color: var(--white);
   }
   .nav-link:hover {
     @media (min-width: $bs-breakpoint-md) {
