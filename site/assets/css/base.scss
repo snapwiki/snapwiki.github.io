@@ -69,3 +69,6 @@ body {
 	--footer-cnt: #{$bs-default-black};
 
 }
+section#intro {
+  background-color: var(--header-bg);
+}
