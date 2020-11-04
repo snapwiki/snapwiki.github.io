@@ -8,21 +8,21 @@ source: site
 markdown: kramdown
 
 plugins:
-- jekyll-autoprefixer
-- jekyll-minifier
-- jekyll-last-modified-at
+  - jekyll-autoprefixer
+  - jekyll-minifier
+  - jekyll-last-modified-at
 autoprefixer:
   browsers:
-  - ">= 1%"
-  - last 1 major version
-  - not dead
-  - Chrome >= 60
-  - Firefox >= 60
-  - Edge >= 16
-  - iOS >= 10
-  - Safari >= 10
-  - Android >= 6
-  - not Explorer <= 11
+    - ">= 1%"
+    - last 1 major version
+    - not dead
+    - Chrome >= 60
+    - Firefox >= 60
+    - Edge >= 16
+    - iOS >= 10
+    - Safari >= 10
+    - Android >= 6
+    - not Explorer <= 11
 
 jekyll-minifier:
   uglifier_args:

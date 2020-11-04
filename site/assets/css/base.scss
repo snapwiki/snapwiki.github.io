@@ -1,66 +1,64 @@
 ---
 ---
+
 @import "variables";
 * {
-	font-family: 'Muli';
+  font-family: "Muli";
 }
 
-h1, h2{
-	font-weight: bold;
+h1,
+h2 {
+  font-weight: bold;
 }
 
 body {
-	background-color: #37A5EF;
-	width: 99%;
-	padding-top: 2%;
+  background-color: #37a5ef;
+  width: 99%;
+  padding-top: 2%;
 }
 
 div.background {
-	width: 50%;
-	height: auto;
-	padding-top: 4%;
-	padding-left: 4%;
-	padding-right: 4%;
-	padding-bottom: 1%;
-	background-color: #E9ECEF;
+  width: 50%;
+  height: auto;
+  padding-top: 4%;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 1%;
+  background-color: #e9ecef;
 }
 header {
-	background-color: var(--header-bg);
-	color: var(--header-cnt);
-	
-	.navbar-nav {
-		margin-left: auto;
+  background-color: var(--header-bg);
+  color: var(--header-cnt);
 
-		.nav-link {
-			color: var(--header-cnt) !important;
-			@media (min-width: $bs-breakpoint-md) {
-				border-radius: .25rem;
-				transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
-				margin-left: 0.125rem
-			}
-		}
+  .navbar-nav {
+    margin-left: auto;
 
-	
-		}
+    .nav-link {
+      color: var(--header-cnt) !important;
+      @media (min-width: $bs-breakpoint-md) {
+        border-radius: 0.25rem;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+          border-color 0.15s ease-in-out;
+        margin-left: 0.125rem;
+      }
+    }
+  }
 
-		.nav-link:hover {
-			@media (min-width: $bs-breakpoint-md) {
-				color: $bs-default-black !important;
-				background-color: white;
-				border-color: white;
-			}
-		
+  .nav-link:hover {
+    @media (min-width: $bs-breakpoint-md) {
+      color: $bs-default-black !important;
+      background-color: white;
+      border-color: white;
+    }
+  }
 
-	}
-	
-	img {
-		height: 30px;
-		width: 30px;
-		transform: scale(1.75);
-	}
-	
-	.navbar-brand img {
-		margin-right: 0.5rem
-	}
-	
+  img {
+    height: 30px;
+    width: 30px;
+    transform: scale(1.75);
+  }
+
+  .navbar-brand img {
+    margin-right: 0.5rem;
+  }
 }
