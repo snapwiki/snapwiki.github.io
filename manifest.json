@@ -1,0 +1,9 @@
+{
+  "name": "Snap! Wiki - A Wiki About Snap! Made by Snappers for Snappers",
+  "short_name": "Snap! Wiki",
+  "theme_color": "blue",
+  "background_color": "white",
+  "display": "minimal-ui",
+  "scope": "/",
+  "start_url": "/"
+}
