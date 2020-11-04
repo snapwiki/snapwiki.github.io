@@ -24,3 +24,43 @@ div.background {
 	padding-bottom: 1%;
 	background-color: #E9ECEF;
 }
+header {
+	background-color: var(--header-bg);
+	color: var(--header-cnt);
+	
+	.navbar-nav {
+		margin-left: auto;
+
+		.nav-link {
+			color: var(--header-cnt) !important;
+			@media (min-width: $bs-breakpoint-md) {
+				border-radius: .25rem;
+				transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+				margin-left: 0.125rem
+			}
+		}
+
+	
+		}
+
+		.nav-link:hover {
+			@media (min-width: $bs-breakpoint-md) {
+				color: $bs-default-black !important;
+				background-color: white;
+				border-color: white;
+			}
+		}
+
+	}
+	
+	img {
+		height: 30px;
+		width: 30px;
+		transform: scale(1.75);
+	}
+	
+	.navbar-brand img {
+		margin-right: 0.5rem
+	}
+	
+}
