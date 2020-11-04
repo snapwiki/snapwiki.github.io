@@ -59,16 +59,14 @@ header {
   }
 }
 body {
-
-	background-color: white;
-	color: $bs-default-black;
-	--header-bg: #{$bs-primary};
-	--header-cnt: white;
-	--intro-heading-bg: #{$bs-primary};
-	--intro-heading-cnt: white;
-	--footer-bg: #f5f5f5;
-	--footer-cnt: #{$bs-default-black};
-
+  background-color: white;
+  color: $bs-default-black;
+  --header-bg: #{$bs-primary};
+  --header-cnt: white;
+  --intro-heading-bg: #{$bs-primary};
+  --intro-heading-cnt: white;
+  --footer-bg: #f5f5f5;
+  --footer-cnt: #{$bs-default-black};
 }
 section#intro {
   background-color: var(--header-bg);
