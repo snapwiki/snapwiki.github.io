@@ -71,3 +71,13 @@ body {
 section#intro {
   background-color: var(--header-bg);
 }
+body.dark {
+  background-color: #121212;
+  color: white;
+  --header-bg: #242424;
+  --header-cnt: white;
+  --intro-heading-bg: #242424;
+  --intro-heading-cnt: white;
+  --footer-bg: #242424;
+  --footer-cnt: white;
+}
