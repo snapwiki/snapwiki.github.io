@@ -157,26 +157,26 @@ footer {
   }
 }
 #dark-toggle {
-	width: 4rem;
-	height: 4rem;
-	border-radius: 50%;
-	background-color: gray;
-	position: fixed;
-	top: calc(100% - 5rem);
-	left: calc(100% - 5rem);
-	opacity: 50%;
-	padding: 1rem;
-	color: white;
-	z-index: 1100;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: gray;
+  position: fixed;
+  top: calc(100% - 5rem);
+  left: calc(100% - 5rem);
+  opacity: 50%;
+  padding: 1rem;
+  color: white;
+  z-index: 1100;
 
-	svg {
-		width: 100%;
-		height: 100%;
-	}
+  svg {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .no-animation {
-	* {
-		transition: none !important
-	}
+  * {
+    transition: none !important;
+  }
 }
