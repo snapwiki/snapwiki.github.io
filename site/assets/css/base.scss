@@ -1,5 +1,6 @@
 ---
 ---
+
 @import "variables";
 
 h1,
@@ -34,7 +35,7 @@ header {
     }
   }
   .visit-nav {
-    color: $bs-default-black !important
+    color: $bs-default-black !important;
   }
   .visit {
     background-color: var(--white);
