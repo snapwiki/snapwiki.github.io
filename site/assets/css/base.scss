@@ -2,6 +2,16 @@
 ---
 
 @import "variables";
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
 main {
   padding: 1.5rem 0;
   flex: 1 0 auto;
