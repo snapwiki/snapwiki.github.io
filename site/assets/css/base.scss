@@ -40,7 +40,9 @@ header {
       }
     }
   }
-
+#visit {
+  color: var(--white)
+  }
   .nav-link:hover {
     @media (min-width: $bs-breakpoint-md) {
       color: $bs-default-black !important;
@@ -54,7 +56,6 @@ header {
     width: 30px;
     transform: scale(1.75);
   }
-
   .navbar-brand img {
     margin-right: 0.5rem;
   }
