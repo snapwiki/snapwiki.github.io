@@ -4,9 +4,7 @@ title: Status
 ---
 
 <h1>Welcome to the Snap! Wiki Status page!</h1>
-	{% for addon in site.data.status %}
-{{ }}
-	{% endfor %}
+{% for addon in site.data.status %} {{ }} {% endfor %}
 
 <div id="status">
   <p>Fetching latest status data...</p>
