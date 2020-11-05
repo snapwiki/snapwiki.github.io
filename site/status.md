@@ -1,10 +1,9 @@
 ---
 layout: default
-title: Status
+title: Welcome to the Snap! Wiki Status page!
 ---
 
 <h1>Welcome to the Snap! Wiki Status page!</h1>
-<div class="container">
   <ul>
     {% for status in site.data.status %}
     <li>{{ status.description }}</li>
