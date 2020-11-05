@@ -23,6 +23,8 @@ autoprefixer:
     - Safari >= 10
     - Android >= 6
     - not Explorer <= 11
+  sass:
+    sass_dir: assets/css
 
 jekyll-minifier:
   uglifier_args:
@@ -30,3 +32,4 @@ jekyll-minifier:
 
 kramdown:
   input: GFM
+  
