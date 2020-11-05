@@ -2,7 +2,9 @@
 layout: default
 title: Welcome to the Snap! Wiki Status page!
 ---
-
+<h1> Welcome to the Snap! Wiki Status page!</h1>
+<ul>
     {% for status in site.data.status %}
-    {{ status.description }}
+        <li class="{{ status.class }}">{{ status.description }}<li>
     {% endfor %}
+    </ul>
