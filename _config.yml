@@ -6,7 +6,6 @@ url: "https://snapwiki.github.io"
 
 source: site
 markdown: kramdown
-  input: GFM
   
 plugins:
   - jekyll-autoprefixer
@@ -28,3 +27,6 @@ autoprefixer:
 jekyll-minifier:
   uglifier_args:
     harmony: true
+    
+kramdown:
+  input: GFM
