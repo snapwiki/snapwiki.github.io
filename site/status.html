@@ -5,12 +5,12 @@ title: Welcome to the Snap! Wiki Status page!
 
 <h1>Welcome to the Snap! Wiki Status page!</h1>
 <div class="card-columns container">
-	{% for addon in site.data.addons %}
-		<div class="card">
-			<div class="card-body">
-				<h5 class="card-title">{{ status.title }}</h5>
-				<h6 class="card-subtitle mb-2 text-muted">{{ status.description }}</h6>
-			</div>
-		</div>
-	{% endfor %}
+  {% for addon in site.data.addons %}
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">{{ status.title }}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{ status.description }}</h6>
+    </div>
+  </div>
+  {% endfor %}
 </div>
