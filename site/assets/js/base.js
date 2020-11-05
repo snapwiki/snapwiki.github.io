@@ -60,4 +60,3 @@ waitForElement("#dark-toggle").then(() => {
     }
   });
 });
-
