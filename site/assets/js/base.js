@@ -28,11 +28,6 @@ const updateDarkTheme = (shiftPressed = false) => {
   setTimeout(() => document.body.classList.toggle("no-animation"), 200);
   darkTheme = !darkTheme;
   localStorage.setItem("darkTheme", darkTheme);
-  if ((darkTheme = false)) {
-    $("meta[name=theme-color]").attr("content", "#007bff");
-  } else {
-    $("meta[name=theme-color]").attr("content", "#242424");
-  }
 };
 
 if (localStorage.getItem("darkTheme") === "true") {
@@ -47,9 +42,11 @@ waitForElement("#dark-toggle").then(() => {
   toggle = document.querySelector("#dark-toggle");
 
   if (darkTheme) {
+    $("meta[name=theme-color]").attr("content", "#242424");
     toggle.innerHTML =
       '<span class="iconify" data-icon="fa-solid:sun" data-inline="false"></span>';
   } else {
+    $("meta[name=theme-color]").attr("content", "#007bff");
     toggle.innerHTML =
       '<span class="iconify" data-icon="fa-solid:moon" data-inline="false"></span>';
   }
@@ -57,9 +54,11 @@ waitForElement("#dark-toggle").then(() => {
   toggle.addEventListener("click", (event) => {
     updateDarkTheme();
     if (darkTheme) {
+      $("meta[name=theme-color]").attr("content", "#242424");
       toggle.innerHTML =
         '<span class="iconify" data-icon="fa-solid:sun" data-inline="false"></span>';
     } else {
+      $("meta[name=theme-color]").attr("content", "#007bff");
       toggle.innerHTML =
         '<span class="iconify" data-icon="fa-solid:moon" data-inline="false"></span>';
     }
