@@ -6,7 +6,8 @@ url: "https://snapwiki.github.io"
 
 source: site
 markdown: kramdown
-
+  input: GFM
+  
 plugins:
   - jekyll-autoprefixer
   - jekyll-minifier
