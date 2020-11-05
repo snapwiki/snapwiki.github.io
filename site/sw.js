@@ -5,7 +5,7 @@ const assets = [
   "assets/css/markdown.scss",
   "/",
   "/status",
-  "/assets/js/status.js"
+  "/assets/js/status.js",
 ];
 
 self.addEventListener("install", (evt) => {
