@@ -1,1 +1,1 @@
-Sitemap: https://scratchaddons.com/sitemap.xml
+Sitemap: /sitemap.xml
