@@ -8,7 +8,7 @@
   "start_url": "/",
   "icons": [
     {
-      "src": "https://static.miraheze.org/snapwikiwiki/0/06/Snap_wiki_logo2.png",
+      "src": "/assets/images/logo.png",
       "sizes": "375x375"
     }
   ]
