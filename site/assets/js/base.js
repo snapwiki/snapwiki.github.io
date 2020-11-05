@@ -28,6 +28,11 @@ const updateDarkTheme = (shiftPressed = false) => {
   setTimeout(() => document.body.classList.toggle("no-animation"), 200);
   darkTheme = !darkTheme;
   localStorage.setItem("darkTheme", darkTheme);
+  if (darkTheme = false) {
+    $('meta[name=theme-color]').attr("content","#007bff");
+  } else {
+    $('meta[name=theme-color]').attr("content","#242424");
+  }
 };
 
 if (localStorage.getItem("darkTheme") === "true") {
