@@ -2,4 +2,4 @@ Contact: mailto:snapwikimiraheze@gmail.com
 Acknowledgments: https://snapwiki.github.io/credits
 Preferred-Languages: en, bn
 Canonical: https://snapwiki.github.io/security.txt
-Policy: https://github.com/snapwiki/snapwiki.github.io/blob/master/.github/SECURITY.md
+Policy: https://github.com/snapwiki/snapwiki.github.io/security/policy
