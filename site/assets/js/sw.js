@@ -1,7 +1,7 @@
-self.importScripts("data/games.js");
+self.importScripts("assets/js/base.js");
 
 // Files to cache
-var cacheName = "js13kPWA-v1";
+var cacheName = "snapwiki";
 var appShellFiles = [
   "/",
   "/index.html",
