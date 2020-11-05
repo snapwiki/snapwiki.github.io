@@ -3,7 +3,9 @@ const assets = [
   "assets/js/base.js",
   "assets/css/base.scss",
   "assets/css/markdown.scss",
-  "/_sass/_variables.scss",
+  "/",
+  "/status",
+  "/assets/js/status.js"
 ];
 
 self.addEventListener("install", (evt) => {
