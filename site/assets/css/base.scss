@@ -201,44 +201,44 @@ footer {
   right: 0;
 }
 body.dark {
+  header {
+    img {
+      transform: scale(1.25);
+    }
+  }
 
-	header {
-		img {
-			transform: scale(1.25);
-		}
-	}
+  textarea,
+  input {
+    background-color: $dark-dp-1;
+    border-color: $dark-dp-16;
+    color: white;
 
-	textarea, input {
-		background-color: $dark-dp-1;
-		border-color: $dark-dp-16;
-		color: white;
+    &:focus,
+    &:active {
+      background-color: $dark-dp-1;
+      border-color: $dark-dp-16;
+      color: white;
+    }
 
-		&:focus, &:active {
-			background-color: $dark-dp-1;
-			border-color: $dark-dp-16;
-			color: white;
-		}
+    &::placeholder {
+      color: $dark-low-emphasis;
+    }
+  }
 
-		&::placeholder {
-			color: $dark-low-emphasis
-		}
+  hr {
+    border-top-color: rgba(white, 0.1);
+  }
 
-	}
+  .card {
+    border-color: $dark-dp-16;
+  }
 
-	hr {
-		border-top-color: rgba(white, 0.1);
-	}
+  .card-body {
+    background-color: $dark-dp-1;
+  }
 
-	.card {
-		border-color: $dark-dp-16
-	}
-
-	.card-body {
-		background-color: $dark-dp-1;
-	}
-
-	.card-header, .card-footer {
-		background-color: $dark-dp-4;
-	}
-
+  .card-header,
+  .card-footer {
+    background-color: $dark-dp-4;
+  }
 }
