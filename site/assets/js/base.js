@@ -62,5 +62,5 @@ waitForElement("#dark-toggle").then(() => {
 });
 // Registering Service Worker
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("/sw.js");
+  navigator.serviceWorker.register("/assets/js/sw.js");
 }
