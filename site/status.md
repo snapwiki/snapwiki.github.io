@@ -8,4 +8,3 @@ title: Welcome to the Snap! Wiki Status page!
     <li>{{ status.description }}</li>
     {% endfor %}
   </ul>
-</div>
