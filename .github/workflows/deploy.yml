@@ -18,6 +18,8 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.6.6
+      - name: Setup Autoprefixer
+        run: npm i -D autoprefixer
       - name: Build site
         uses: limjh16/jekyll-action-ts@v2
         with:
