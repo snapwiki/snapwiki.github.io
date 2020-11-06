@@ -3,7 +3,7 @@
   "short_name": "Snap! Wiki",
   "theme_color": "blue",
   "background_color": "white",
-  "display": "minimal-ui",
+  "display": "standalone",
   "scope": "/",
   "start_url": "/",
   "icons": [
