@@ -12,11 +12,11 @@
       "sizes": "375x375"
     }
   ],
-"shortcuts": [
-  {
-    "name": "Status",
-    "url": "/status",
-    "description": "Status of the Wiki"
-  }
-]
+  "shortcuts": [
+    {
+      "name": "Status",
+      "url": "/status",
+      "description": "Status of the Wiki"
+    }
+  ]
 }
