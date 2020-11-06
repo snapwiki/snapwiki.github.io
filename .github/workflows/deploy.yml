@@ -19,7 +19,7 @@ jobs:
         with:
           ruby-version: 2.6.6
       - name: Setup Autoprefixer
-        run: npm i -D autoprefixer
+        run: npm i -D autoprefixer && npm install postcss
       - name: Build site
         uses: limjh16/jekyll-action-ts@v2
         with:
