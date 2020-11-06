@@ -2,15 +2,15 @@
 layout: default
 title: SnapProjectEmbed
 ---
+
 <h1>SnapProjectEmbed</h1>
 <div class="container">
-    {% for site.data.project in site.data.status %}
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">{{ status.title }}</h5>
-        <h6 class="card-subtitle mb-2 text-muted">{{ status.description }}</h6>
-      </div>
+  {% for site.data.project in site.data.status %}
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">{{ status.title }}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{ status.description }}</h6>
     </div>
-    {% endfor %}
-  
+  </div>
+  {% endfor %}
 </div>
