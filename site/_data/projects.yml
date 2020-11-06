@@ -1,4 +1,4 @@
 ---
 - title: SnapProjectEmbed
-  description: An MediaWiki extension to embed Snap<em>!</em> Projects using <code>&lt;snap&gt;</code> tags
+  description: An MediaWiki extension to embed Snap<em>!</em> Projects using <code>&lt;snap/&gt;</code> tags
   link: /projects/snap-project-embed
