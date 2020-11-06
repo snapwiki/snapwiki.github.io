@@ -10,4 +10,4 @@ If you find any issue in the Issues tab that you can fix and is not assigned to 
 
 # Code of Conduct
 
-Please see (CODE_OF_CONDUCT.md)[https://github.com/snapwiki/snapwiki.github.io/blob/master/CODE_OF_CONDUCT.md] for our code of conduct.
+Please see [CODE_OF_CONDUCT.md](https://github.com/snapwiki/snapwiki.github.io/blob/master/CODE_OF_CONDUCT.md) for our code of conduct.
