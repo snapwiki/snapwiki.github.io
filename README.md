@@ -5,13 +5,15 @@ Huge thanks to @ScratchAddons/website for the entire base.
 
 ## Building
 
-- If you haven't already, clone the repo using 
-```shell 
+- If you haven't already, clone the repo using
+
+```shell
 git clone https://github.com/snapwiki/snapwiki.github.io.git
 ```
 
-- Then, get into the folder by typing 
-```shell 
+- Then, get into the folder by typing
+
+```shell
 cd snapwiki.github.io
 ```
 
