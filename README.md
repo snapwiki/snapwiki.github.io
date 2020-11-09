@@ -10,7 +10,7 @@ Huge thanks to @ScratchAddons/website for the entire base.
 2. Install the dependencies in the `Gemfile`:
 
 ```batch
-bundle install 
+bundle install
 ```
 
 3. Serve the website (`localhost:4000` by default):
