@@ -1,7 +1,7 @@
 ---
 - description: Our automated status and uptime page.
   title: <a href="/SnapWikiUptime">Uptime Page</a>
-  
+
 - description: There is a parsing issue on our homepage which is being mitigated by an invisible comment in the Wiki News section. You can read about it <a href="https://phabricator.miraheze.org/T6301/">here.</a>
   title: Parsing Issue
 
