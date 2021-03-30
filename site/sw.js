@@ -11,7 +11,7 @@ self.addEventListener("message", (event) => {
 });
 
 workbox.routing.registerRoute(
-  new RegExp("/*"),
+  new RegExp("*"),
   new workbox.strategies.StaleWhileRevalidate({
     cacheName: CACHE,
   })
@@ -22,7 +22,7 @@ if (workbox) {
 } else {
   console.log(`Boo! Workbox didn't load 😬`);
 }
-
+/*
 const staticCacheName = "Snap! Wiki";
 const assets = [
   "assets/js/base.js",
@@ -60,4 +60,4 @@ self.addEventListener("fetch", (evt) => {
       return cacheRes || fetch(evt.request);
     })
   );
-});
+});*/
