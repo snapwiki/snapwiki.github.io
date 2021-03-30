@@ -1,10 +1,10 @@
 importScripts(
   "https://storage.googleapis.com/workbox-cdn/releases/6.1.1/workbox-sw.js"
 );
-const {registerRoute} = workbox.routing;
-const {CacheFirst, StaleWhileRevalidate,NetworkFirst} = workbox.strategies;
-const {CacheableResponse} = workbox.cacheableResponse;
-const {ExpirationPlugin} = workbox.expiration;
+const { registerRoute } = workbox.routing;
+const { CacheFirst, StaleWhileRevalidate, NetworkFirst } = workbox.strategies;
+const { CacheableResponse } = workbox.cacheableResponse;
+const { ExpirationPlugin } = workbox.expiration;
 
 // Cache page navigations (html) with a Network First strategy
 registerRoute(
