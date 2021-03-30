@@ -33,6 +33,8 @@ div.background {
 header {
   background-color: var(--header-bg);
   color: var(--header-cnt);
+  width: 90vw;
+  margin: auto;
 
   .navbar-nav {
     margin-left: auto;
