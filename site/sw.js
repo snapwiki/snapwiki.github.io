@@ -1,63 +1,60 @@
-const CACHE = "pwabuilder-offline";
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.1.1/workbox-sw.js');
 
-importScripts(
-  "https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js"
+// Cache page navigations (html) with a Network First strategy
+workbox.registerRoute(
+  // Check to see if the request is a navigation to a new page
+  ({ request }) => request.mode === 'navigate',
+  // Use a Network First caching strategy
+  new workbox.NetworkFirst({
+    // Put all cached files in a cache named 'pages'
+    cacheName: 'pages',
+    plugins: [
+      // Ensure that only requests that result in a 200 status are cached
+      new workbox.CacheableResponsePlugin({
+        statuses: [200],
+      }),
+    ],
+  }),
 );
 
-self.addEventListener("message", (event) => {
-  if (event.data && event.data.type === "SKIP_WAITING") {
-    self.skipWaiting();
-  }
-});
-
-workbox.routing.registerRoute(
-  new RegExp("*"),
-  new workbox.strategies.StaleWhileRevalidate({
-    cacheName: CACHE,
-  })
+// Cache CSS, JS, and Web Worker requests with a Stale While Revalidate strategy
+workbox.registerRoute(
+  // Check to see if the request's destination is style for stylesheets, script for JavaScript, or worker for web worker
+  ({ request }) =>
+    request.destination === 'style' ||
+    request.destination === 'script' ||
+    request.destination === 'worker',
+  // Use a Stale While Revalidate caching strategy
+  new workbox.StaleWhileRevalidate({
+    // Put all cached files in a cache named 'assets'
+    cacheName: 'assets',
+    plugins: [
+      // Ensure that only requests that result in a 200 status are cached
+      new workbox.CacheableResponsePlugin({
+        statuses: [200],
+      }),
+    ],
+  }),
 );
 
-if (workbox) {
-  console.log(`Yay! Workbox is loaded 🎉`);
-} else {
-  console.log(`Boo! Workbox didn't load 😬`);
-}
-/*
-const staticCacheName = "Snap! Wiki";
-const assets = [
-  "assets/js/base.js",
-  "assets/css/base.scss",
-  "assets/css/markdown.scss",
-  "/",
-  "/status",
-  "/assets/js/status.js",
-];
-
-self.addEventListener("install", (evt) => {
-  evt.waitUntil(
-    caches.open(staticCacheName).then((cache) => {
-      console.log("Caching shell assets...");
-      cache.addAll(assets);
-    })
-  );
-});
-
-self.addEventListener("activate", (evt) => {
-  evt.waitUntil(
-    caches.keys().then((keys) => {
-      return Promise.all(
-        keys
-          .filter((key) => key !== staticCacheName)
-          .map((key) => caches.delete(key))
-      );
-    })
-  );
-});
-
-self.addEventListener("fetch", (evt) => {
-  evt.respondWith(
-    caches.match(evt.request).then((cacheRes) => {
-      return cacheRes || fetch(evt.request);
-    })
-  );
-});*/
+// Cache images with a Cache First strategy
+workbox.registerRoute(
+  // Check to see if the request's destination is style for an image
+  ({ request }) => request.destination === 'image',
+  // Use a Cache First caching strategy
+  new workbox.CacheFirst({
+    // Put all cached files in a cache named 'images'
+    cacheName: 'images',
+    plugins: [
+      // Ensure that only requests that result in a 200 status are cached
+      new workbox.CacheableResponsePlugin({
+        statuses: [200],
+      }),
+      // Don't cache more than 50 items, and expire them after 30 days
+      new workbox.ExpirationPlugin({
+        maxEntries: 50,
+        maxAgeSeconds: 60 * 60 * 24 * 30, // 30 Days
+      }),
+    ],
+  }),
+);
