@@ -42,11 +42,11 @@ waitForElement("#dark-toggle").then(() => {
   toggle = document.querySelector("#dark-toggle");
 
   if (darkTheme) {
-    $("meta[name=theme-color]").attr("content", "#242424");
+    document.querySelector("meta[name=theme-color]").setAttribute("content", "#242424");
     toggle.innerHTML =
       '<span class="iconify" data-icon="fa-solid:sun" data-inline="false"></span>';
   } else {
-    $("meta[name=theme-color]").attr("content", "#007bff");
+    document.querySelector("meta[name=theme-color]").setAttribute("content", "#007bff");
     toggle.innerHTML =
       '<span class="iconify" data-icon="fa-solid:moon" data-inline="false"></span>';
   }
@@ -54,11 +54,11 @@ waitForElement("#dark-toggle").then(() => {
   toggle.addEventListener("click", (event) => {
     updateDarkTheme();
     if (darkTheme) {
-      $("meta[name=theme-color]").attr("content", "#242424");
+      document.querySelector("meta[name=theme-color]").setAttribute("content", "#242424");
       toggle.innerHTML =
         '<span class="iconify" data-icon="fa-solid:sun" data-inline="false"></span>';
     } else {
-      $("meta[name=theme-color]").attr("content", "#007bff");
+      document.querySelector("meta[name=theme-color]").setAttribute("content", "#007bff");
       toggle.innerHTML =
         '<span class="iconify" data-icon="fa-solid:moon" data-inline="false"></span>';
     }
