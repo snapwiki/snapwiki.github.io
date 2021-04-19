@@ -76,4 +76,4 @@ waitForElement("#dark-toggle").then(() => {
 headers = new Headers();
 
 // Add HTTP header to opt out of Federated Learning of Cohorts (FLoC)
-headers.set('Permissions-Policy', 'interest-cohort=()');
+headers.set("Permissions-Policy", "interest-cohort=()");
