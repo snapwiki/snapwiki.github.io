@@ -1,7 +1,7 @@
 on: 
   [push, pull_request]
 
-name: Site Deployment
+name: Continuous Integration
 
 jobs:
   deploy:
@@ -23,5 +23,5 @@ jobs:
           jekyll_src: site
           custom_opts: --config _config.yml --trace
         env:
-          JEKYLL_ENV: production
+          JEKYLL_ENV: ci
           
