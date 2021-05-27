@@ -1,9 +1,17 @@
 version: 2
 updates:
-- package-ecosystem: bundler
-  directory: "/"
+# Fetch and update latest `npm` packages
+- package-ecosystem: npm
+  directory: '/'
   schedule:
     interval: daily
-    time: "11:00"
+    time: '00:00'
   open-pull-requests-limit: 10
-  
+  reviewers:
+    - snapwiki
+  assignees:
+    - snapwiki
+  commit-message:
+    prefix: fix
+    prefix-development: chore
+    include: scope

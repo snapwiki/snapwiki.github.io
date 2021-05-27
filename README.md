@@ -1,32 +1,20 @@
 # snapwiki.github.io
 
-Website for the Snap! Wiki at https://snapwiki.github.io.
-Huge thanks to @ScratchAddons/website for the entire base.
+## Build Setup
 
-## Building
+```bash
+# install dependencies
+$ npm install
 
-- If you haven't already, clone the repo using
+# serve with hot reload at localhost:3000
+$ npm run dev
 
-```shell
-git clone https://github.com/snapwiki/snapwiki.github.io.git
+# build for production and launch server
+$ npm run build
+$ npm run start
+
+# generate static project
+$ npm run generate
 ```
 
-- Then, get into the folder by typing
-
-```shell
-cd snapwiki.github.io
-```
-
-1. You will need [Ruby](https://www.ruby-lang.org/en/) and [Bundler](https://bundler.io/) to use [Jekyll](https://jekyllrb.com/). Read [Using Jekyll with Bundler](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/) to install the requirements.
-
-2. Install the dependencies in the `Gemfile`:
-
-```shell
-bundle install
-```
-
-3. Serve the website (`localhost:4000` by default):
-
-```shell
-bundle exec jekyll serve
-```
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
