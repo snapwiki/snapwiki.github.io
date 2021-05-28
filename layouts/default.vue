@@ -16,7 +16,7 @@
 
               <a href="https://github.com/snapwiki" class="text-gray-200 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Organization</a>
 
-              <a href="https://snapwiki.miraheze.org" class="text-gray-200 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Visit The Wiki</a>
+              <a href="https://snapwiki.miraheze.org" class="bg-gray-200 text-blue-700 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Visit The Wiki</a>
             </div>
           </div>
         </div>
