@@ -1,1 +1,0 @@
-function fetcher(){fetch("https://snapwiki.github.io/statuspage/status.json").then(t=>t.json()).then(t=>{t.status;console.log(status),document.getElementById("status").innerHTML=`${status}`})["catch"](t=>{console.error("An error occured while fetching the message count:",t)})}document.addEventListener("DOMContentLoaded",fetcher());
