@@ -1,3 +1,5 @@
+import defaultTheme from 'tailwindcss/defaultTheme'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
