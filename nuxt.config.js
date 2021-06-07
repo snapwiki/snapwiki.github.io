@@ -6,7 +6,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "snapwiki.github.io",
+    title: "Snap! Wiki",
     htmlAttrs: {
       lang: "en",
     },
