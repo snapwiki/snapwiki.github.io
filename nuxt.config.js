@@ -16,7 +16,7 @@ export default {
       { name: "generator", content: "NuxtJS 2.15.3" },
       { property: "og:site_name", content: "Snap! Wiki" }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [{ rel: "icon", href: "/logo.png" }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
