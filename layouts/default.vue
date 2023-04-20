@@ -6,7 +6,7 @@
       <div class="flex items-center justify-between h-16">
         <div class="flex items-center">
           <div class="flex-shrink-0">
-           <nuxt-link to="/"> <img class="h-10 w-10 inline" src="~/static/icon.png" alt="Snap Wiki"> <span class="inline text-white font-bold text-1xl">Snap Wiki</span></nuxt-link>
+           <nuxt-link to="/"> <img class="h-10 w-10 inline" src="~/static/icon.png" alt="Snap! Wiki"> <span class="inline text-white font-bold text-1xl">Snap<i>!</i> Wiki</span></nuxt-link>
           </div>
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
