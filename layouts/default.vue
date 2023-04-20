@@ -12,7 +12,7 @@
             <div class="ml-10 flex items-baseline space-x-4">
               <!-- Current: "bg-blue-900 text-white", Default: "text-blue-300 hover:bg-blue-700 hover:text-white" -->
 
-              <NuxtLink to="/status" class="text-gray-200 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Status</NuxtLink>
+              <a href="/SnapWikiUptime" class="text-gray-200 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Status</a>
 
               <a href="https://github.com/snapwiki" class="text-gray-200 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Organization</a>
 
